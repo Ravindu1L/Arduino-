@@ -12,14 +12,14 @@ void loop() {
   msvalue = analogRead(msensor);
   Serial.println(msvalue);
   
-  if ( (msvalue <= 300  ) && ( flag == false ) )
+  if ( (msvalue <= 356  ) && ( flag == false ) )
 {
   digitalWrite(led, HIGH); 
   flag = true; 
   delay(1000); 
 }
  
-  if ( (msvalue > 300  ) && ( flag == true ) )
+  if ( (msvalue > 356  ) && ( flag == true ) )
 {
   digitalWrite(led, LOW); 
   flag = false; 
